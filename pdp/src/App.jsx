@@ -6,6 +6,8 @@ import Footer from "home/Footer";
 import Header from "home/Header";
 import "./index.scss";
 import SafeComponent from "./SafeComponent";
+import PDPContent from "./PDPContent";
+import {Route,BrowserRouter as Router,Routes} from "react-router-dom"
 
 // const App = () => {
 //   const [showHeader,setShowHeader]=useState(false);
@@ -23,14 +25,16 @@ import SafeComponent from "./SafeComponent";
 // );}
 
 const App=()=>(
-  <div className="mt-10 text-3xl mx-auto max-w-6xl">
-    <SafeComponent>
-      <Header/>
-    </SafeComponent>
-    <div className="py-10">
-      PDP Page Content
+  <Router>
+    <div className="mt-10 text-3xl mx-auto max-w-6xl">
+        <Header/>
+      <div className="py-10">
+        <Routes>
+          <Route path="/product/:id" element={<PDPContent/>}/>
+        </Routes>
+      </div>
+      <Footer/>
     </div>
-    <Footer/>
-  </div>
+  </Router>
 )
 ReactDOM.render(<App />, document.getElementById("app"));
