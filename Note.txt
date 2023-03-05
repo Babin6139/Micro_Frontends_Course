@@ -1,0 +1,5 @@
+PORT=3000 npx servor 
+It imitates a static asset store
+
+As long as s3 in your static asset store don't go down,
+then we are not going to have an issue

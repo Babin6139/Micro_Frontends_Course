@@ -5,6 +5,7 @@ import ReactDOM from "react-dom";
 import Footer from "home/Footer";
 import Header from "home/Header";
 import "./index.scss";
+import SafeComponent from "./SafeComponent";
 
 // const App = () => {
 //   const [showHeader,setShowHeader]=useState(false);
@@ -23,7 +24,9 @@ import "./index.scss";
 
 const App=()=>(
   <div className="mt-10 text-3xl mx-auto max-w-6xl">
-    <Header/>
+    <SafeComponent>
+      <Header/>
+    </SafeComponent>
     <div className="py-10">
       PDP Page Content
     </div>
