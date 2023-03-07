@@ -4,6 +4,8 @@ import ReactDOM from "react-dom";
 // const Header=React.lazy(()=>import ("home/Header"));
 import Footer from "home/Footer";
 import Header from "home/Header";
+import "remixicon/fonts/remixicon.css"
+
 import "./index.scss";
 import SafeComponent from "./SafeComponent";
 import PDPContent from "./PDPContent";
