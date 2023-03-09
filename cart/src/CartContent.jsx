@@ -14,7 +14,7 @@ export default function CartContent(){
             <div>{item.quantity}</div>
              <img src={item.image} alt={item.name} className="max-h-6" />
             <div>{item.name}</div>
-             <div className="text-right">
+             <div className="text-right" id="grandtotal">
                 {currency.format(item.price* item.quantity)}
                      </div>
             
