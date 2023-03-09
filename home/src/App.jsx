@@ -3,17 +3,9 @@ import ReactDOM from "react-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import HomeContent from "./HomeContent";
+import MainLayout from "./MainLayout";
 import "remixicon/fonts/remixicon.css"
 
 import "./index.scss";
 
-const App = () => (
-  <div className="mt-10 text-3xl mx-auto max-w-6xl">
-    <Header/>
-    <div className="py-10">
-      <HomeContent></HomeContent>
-    </div>
-    <Footer/>
-  </div>
-);
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(<MainLayout/>, document.getElementById("app"));
